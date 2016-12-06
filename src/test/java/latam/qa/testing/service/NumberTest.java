@@ -20,5 +20,17 @@ public class NumberTest {
         assertNotSame(String.format("%d,%d", 1, 5), result);
 
     }
-    
+
+    @Test(expected=ArithmeticException.class)
+    public void divideNumeros_cero(){
+        Number n = new Number();
+        n.divideNumeros(4,0)
+}
+
+    @Test
+    public void divideNumeros(){
+        Number n = new Number();
+       assertEquals(5,n.divideNumeros(20,4))
+}
+
 }
